@@ -1,9 +1,9 @@
-import { Sidenav } from './components/sidenav'
+import { Mainnav } from './components/navigations/mainnav'
 
 function App() {
   return (
     <>
-     <Sidenav />
+     <Mainnav />
     </>
   )
 }
