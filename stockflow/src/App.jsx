@@ -1,11 +1,18 @@
-import { Mainnav } from './components/navigations/mainnav';
-import { PosNav } from './components/navigations/posnav';
+import { Mainnav } from './components/layout/mainnav';
+import { PosNav } from './components/layout/posnav';
+// import { Inventory } from './components/layout/inventorynav';
+// import { Orders } from './components/layout/ordersnav';
+import { Pos } from './components/sections/pos';
 
 function App() {
   return (
     <>
+     <Pos/>
      <Mainnav />
-     <PosNav/>
+     <PosNav />
+     {/* <Inventory/> */}
+     {/* <Orders/> */}
+     
     </>
   )
 }
