@@ -3,6 +3,7 @@
 @theme {
   --color-primary: #f5f5f4;
   --color-secondary: #16a34a;
+  --color-darkgreen: #08722f;
   --color-secondaryred: #a31616;
   --color-dark: #1c1917;
   --color-click: #15803d;
@@ -20,7 +21,12 @@
   --font-main: 'Inter', sans-serif;
 
   --text-20: 18px;
+  --height-pos: 240px;
 
   /* Custom Border Colors */
   --color-border: rgb(238, 238, 237);
+}
+
+.he{
+  background-color:  #08722f;
 }

@@ -5,7 +5,7 @@ import documents from '../../assets/icons/proicons--document.svg';
 
 export function Mainnav(){
   return(
-    <div className='bg-dark z-50 fixed left-0 top-0 bottom-0 flex flex-col align-middle justify-between py-5 px-4'>
+    <div className='font-body bg-dark z-50 fixed left-0 top-0 bottom-0 flex flex-col align-middle justify-between py-5 px-4'>
       <div className='flex flex-col align-middle justify-center space-y-5'>
         <button className='text-white bg-secondary font-bold text-20 rounded-md text-center justify-items-center w-9 ml-auto mr-auto py-1 cursor-pointer'>SF</button>
           <div className='flex flex-col space-y-1'>

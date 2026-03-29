@@ -47,14 +47,14 @@ export function PosNav() {
 
   return (
     <>
-      <div className="flex relative align-middle m-auto justify-between pl-25 pr-3 h-20 border-border border-b">
+      <div className="font-body flex relative align-middle m-auto justify-between pl-25 pr-3 h-20 border-border border-b">
         <div className="flex flex-col align-middle justify-center">
           <p className="font-semibold m-0 p-0 text-md">Point of Sale</p>
           <p className="text-light m-0 p-0 text-sm">Table service & takeaway</p>
         </div>
 
         <div className="flex align-middle justify-between min-w-xl">
-          <div className="bg-input group border border-border group-focus-within:border-secondary rounded-tl-md rounded-bl-md rounded-tr-md rounded-br-md flex m-auto align-middle justify-center gap-2 p-0.5 px-2">
+          <div className="bg-input border border-border rounded-tl-md rounded-bl-md rounded-tr-md rounded-br-md flex m-auto align-middle justify-center gap-2 p-0.5 px-2">
             <button className="mt-auto mb-auto pt-1">
               <img width={15} src={search} alt="search-icon" loading="lazy" />
             </button>
@@ -76,7 +76,7 @@ export function PosNav() {
           {buttonSwitch === "Online" && (
             <button
               onClick={renderoffline}
-              className="bg-lightgreen text-secondary border flex m-auto align-middle justify-center px-2.5 p-0.5 border-secondary rounded-md cursor-pointer"
+              className="bg-lightgreen text-secondary active:translate-x-1 border flex m-auto align-middle justify-center px-2.5 p-0.5 border-secondary rounded-md cursor-pointer"
             >
               {buttonSwitch}
             </button>
@@ -85,7 +85,7 @@ export function PosNav() {
           {buttonSwitch === "Offline" && (
             <button
               onClick={renderoffline}
-              className="bg-lightred text-secondaryred border flex m-auto align-middle justify-center px-2.5 p-0.5 border-secondaryred rounded-md cursor-pointer"
+              className="bg-lightred text-secondaryred border active:translate-x-1 flex m-auto align-middle justify-center px-2.5 p-0.5 border-secondaryred rounded-md cursor-pointer"
             >
               {buttonSwitch}
             </button>
