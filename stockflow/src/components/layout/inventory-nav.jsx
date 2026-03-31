@@ -1,6 +1,6 @@
 import addIcon from '../../assets/icons/add_24dp_999999_FILL0_wght400_GRAD0_opsz24.svg';
 
-export function Inventory() {
+export function InventoryNav() {
   return (
     <div className="font-body flex relative align-middle m-auto justify-between pl-25 pr-5 h-20 border-border border-b">
       <div className="flex flex-col align-middle justify-center">

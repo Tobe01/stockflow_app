@@ -1,4 +1,4 @@
-export function Orders() {
+export function OrdersNav() {
   return (
     <div className="font-body flex relative align-middle m-auto justify-between pl-25 pr-5 h-20 border-border border-b">
       <div className="flex flex-col align-middle justify-center">

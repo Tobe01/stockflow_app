@@ -2,7 +2,7 @@ import bag from "../../assets/icons/proicons--cart.svg";
 import egusi from "../../assets/food/egusi.webp";
 import check from "../../assets/icons/check_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg";
 
-export function Pos() {
+export function PosSection() {
   return (
     <div className="font-body fixed right-0 z-50 bottom-0 top-20 min-w-96">
       <div className="py-4 border-t-0 border border-border flex align-middle justify-between pl-3 pr-4">
