@@ -7,7 +7,7 @@ export function PagesRoutes(){
   return(
     <>
      <Routes>
-      <Route path="/pos" element={<PosPage/>} />
+      <Route index element={<PosPage/>} />
       {/* <Route path="/inventory" element={<InventoryPage/>} />
       <Route path="/orders" element={<OrdersPage/>} /> */}
      </Routes>

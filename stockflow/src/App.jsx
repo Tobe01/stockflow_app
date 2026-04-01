@@ -10,7 +10,7 @@ import { PagesRoutes } from './routes/routes';
 function App() {
   return (
     <>
-     <PagesRoutes/>
+     <PagesRoutes />
     {/* <PosPage/> */}
      {/* <Pos/>
      <Mainnav />
