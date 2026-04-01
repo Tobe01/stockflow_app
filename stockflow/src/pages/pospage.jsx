@@ -12,7 +12,7 @@ export function PosPage(){
     <div>
       <MainNav/>
       <PosNav/>
-      <Pos/>
+      <PosSection/>
       <MenuOptions/>
       <div className='font-body ml-18 pl-5 pt-36 overflow-hidden pr-10 py-1.75 w-[66.6%] h-fit'>
         <div className='w-full grid w-purple-400 grid-cols-4 align-middle justify-between gap-x-7 gap-y-2'>
