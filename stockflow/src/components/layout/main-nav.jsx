@@ -27,7 +27,7 @@ export function MainNav(){
             <Link to="/orders">
               <button className='hover:bg-neutral-700 transition-transform duration-100 active:translate-y-1  group relative rounded-md text-center justify-items-center py-2.5 px-2.5 cursor-pointer'>
                 <img src={documents} alt='orders-icon' loading='lazy' />
-                <span className='absolute pointer-events-none -right-22 bottom-2 bg-dark opacity-0 group-hover:opacity-100 duration-200 text-white text-sm w-18 p-1 m-auto text-center rounded-md'>Order</span>
+                <span className='absolute pointer-events-none -right-26 bottom-2 bg-dark opacity-0 group-hover:opacity-100 duration-200 text-white text-sm w-22 p-1 m-auto text-center rounded-md whitespace-nowrap'>Order Feed</span>
               </button>
             </Link>
 
