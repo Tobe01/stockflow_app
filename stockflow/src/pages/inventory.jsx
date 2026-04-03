@@ -42,10 +42,10 @@ export function InventoryPage(){
         <div className='bg-green-400'>
 
          <div className='bg-yellow-300 flex align-middle space-x-55 justify-items-start'>
-          <div>Ingredient</div>
-          <div>In Stock</div>
-          <div>Min. Level</div>
-          <div>Stock Level</div>
+          <div className='bg-pink-300 w-25 text-center'>Ingredient</div>
+          <div className='bg-pink-400 w-25 text-center'>In Stock</div>
+          <div className='bg-pink-500 w-25 text-center'>Min. Level</div>
+          <div className='bg-pink-600 w-25 text-center'>Stock Level</div>
           <div></div>
          </div>
           
@@ -58,9 +58,9 @@ export function InventoryPage(){
                 <button>OK</button>
               </div>
 
-              <div className='bg-pink-400'><p>85 kg</p></div>
+              <div className='bg-pink-400 w-25 text-center'><p>85 kg</p></div>
 
-              <div className='bg-pink-500'><p>20 kg</p></div>
+              <div className='bg-pink-500 w-25 text-center'><p>20 kg</p></div>
 
               <div className='bg-pink-600 flex align-middle justify-center'>
                 <div className='flex flex-col'>
