@@ -1,6 +1,8 @@
+import cookies from '../assets/icons/material-symbols--cookie.svg';
+
 export const inventory = [{
   itemId: crypto.randomUUID(),
-  itemImage: '',
+  itemImage: cookies,
   ingredients: 'Parboiled Rice',
   quantity: 'OK',
   inStock: '85 kg',
@@ -9,7 +11,7 @@ export const inventory = [{
 }, 
 {
   itemId: crypto.randomUUID(),
-  itemImage: '',
+  itemImage: cookies,
   ingredients: 'Palm Oil',
   quantity: 'Critical',
   inStock: '6 L',
@@ -18,7 +20,7 @@ export const inventory = [{
 }, 
 {
   itemId: crypto.randomUUID(),
-  itemImage: '',
+  itemImage: cookies,
   ingredients: 'Chicken',
   quantity: 'Critical',
   inStock: '4 kg',
@@ -27,7 +29,7 @@ export const inventory = [{
 }, 
 {
   itemId: crypto.randomUUID(),
-  itemImage: '',
+  itemImage: cookies,
   ingredients: 'Beef',
   quantity: 'Low',
   inStock: '12 kg',
@@ -36,7 +38,7 @@ export const inventory = [{
 }, 
 {
   itemId: crypto.randomUUID(),
-  itemImage: '',
+  itemImage: cookies,
   ingredients: 'Tomatoes',
   quantity: 'OK',
   inStock: '18 kg',
@@ -45,7 +47,7 @@ export const inventory = [{
 }, 
 {
   itemId: crypto.randomUUID(),
-  itemImage: '',
+  itemImage: cookies,
   ingredients: 'Onions',
   quantity: 'OK',
   inStock: '22 kg',
@@ -54,7 +56,7 @@ export const inventory = [{
 }, 
 {
   itemId: crypto.randomUUID(),
-  itemImage: '',
+  itemImage: cookies,
   ingredients: 'Ground Crayfish',
   quantity: 'Low',
   inStock: '3 kg',
@@ -63,7 +65,7 @@ export const inventory = [{
 }, 
 {
   itemId: crypto.randomUUID(),
-  itemImage: '',
+  itemImage: cookies,
   ingredients: 'Melon (Egusi)',
   quantity: 'Critical',
   inStock: '2 kg',
@@ -72,7 +74,7 @@ export const inventory = [{
 }, 
 {
   itemId: crypto.randomUUID(),
-  itemImage: '',
+  itemImage: cookies,
   ingredients: 'Plantain',
   quantity: 'OK',
   inStock: '48 fingers',
@@ -81,7 +83,7 @@ export const inventory = [{
 }, 
 {
   itemId: crypto.randomUUID(),
-  itemImage: '',
+  itemImage: cookies,
   ingredients: 'Soft Drinks',
   quantity: 'Ok',
   inStock: '24 bottles',
@@ -90,7 +92,7 @@ export const inventory = [{
 }, 
 {
   itemId: crypto.randomUUID(),
-  itemImage: '',
+  itemImage: cookies,
   ingredients: 'Cooking Gas',
   quantity: 'Low',
   inStock: '8 kg',
@@ -99,7 +101,7 @@ export const inventory = [{
 }, 
 {
   itemId: crypto.randomUUID(),
-  itemImage: '',
+  itemImage: cookies,
   ingredients: 'Salt',
   quantity: 'Ok',
   inStock: '4 kg',
