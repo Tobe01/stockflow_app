@@ -43,8 +43,15 @@
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.4); /* dark overlay */
-  backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px); /* Safari support */
+  backdrop-filter: blur(8px);
   z-index: 50;
+}
+
+/* Modal content */
+.modal-content {
+  transform: scale(0.95) translateY(10px);
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 
