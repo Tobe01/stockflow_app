@@ -2,12 +2,15 @@ import { MainNav } from "../components/layout/main-nav";
 import { InventoryNav } from "../components/layout/inventory-nav";
 import { inventory } from "../data/inventory-data";
 import { stockMetrix } from "../data/stockmetrix";
+import { AddInventory } from '../components/layout/add-inventory';
 
 export function InventoryPage() {
   return (
     <div>
       <MainNav />
       <InventoryNav />
+
+      <AddInventory/>
 
       <div className="font-body text-[14px] gap-5 h- flex flex-col pl-25 pr-5 py-6">
         <div className="flex align-middle m-auto justify-center gap-2 w-full">
