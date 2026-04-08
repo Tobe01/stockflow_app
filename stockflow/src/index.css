@@ -38,3 +38,13 @@
   --color-border: rgb(238, 238, 237);
 }
 
+/* Modal backdrop */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  z-index: 50;
+}
+

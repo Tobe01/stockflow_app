@@ -2,7 +2,7 @@ import { MainNav } from "../components/layout/main-nav";
 import { InventoryNav } from "../components/layout/inventory-nav";
 import { inventory } from "../data/inventory-data";
 import { stockMetrix } from "../data/stockmetrix";
-import { AddInventory } from '../components/layout/add-inventory';
+import { AddInventory } from '../components/modals/add-inventory';
 
 export function InventoryPage() {
   return (
