@@ -10,7 +10,7 @@ export function AddInventory({setAddItems}) {
     <div className="modal-backdrop fixed top-0 left-0 right-0 bottom-0 flex align-middle justify-center overflow-hidden font-body">
       <div className="bg-white flex flex-col m-auto p-5 rounded-lg gap-2">
         <div className="flex align-middle justify-between">
-          <p className="font-bold text-2xl">Add New Item</p>
+          <p className="font-bold text-20">Add New Stock</p>
           <span onClick={closeAddItemsModal} className="align-middle justify-center flex">
             <img className="w-9 bg-input scale-100 hover:scale-102 transition-transform duration-100 active:scale-95 flex m-auto px-1 p-0.5 rounded-sm border border-border cursor-pointer" src={closeIcon} alt="closeIcon" loading="lazy" />
           </span>

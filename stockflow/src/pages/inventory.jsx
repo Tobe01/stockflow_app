@@ -10,14 +10,14 @@ export function InventoryPage() {
 
   const [ addItems, setAddItems ] = useState(false);
   const [ restock, setRestock ] = useState(false);
-
-  const ingredient = inventory.ingredients;
+  const [ restockIngredient, setRestockIngredient ] = useState('');
 
   function showAddItemsModal(){
       setAddItems(true);
   }
 
-  function showRestockModal(){
+  function showRestockModal(ingredient){
+    setRestockIngredient(ingredient);
     setRestock(true);
   }
 
@@ -31,7 +31,7 @@ export function InventoryPage() {
       )}
 
       { restock && (
-        <Restock setRestock={setRestock} ingredient={ingredient} />
+        <Restock setRestock={setRestock} ingredient={restockIngredient} />
       )}
 
       <div className="font-body text-[14px] gap-5 h- flex flex-col pl-25 pr-5 py-6">
@@ -117,7 +117,7 @@ export function InventoryPage() {
                       </div>
                     </div>
                     <div className="m-auto">
-                      <button onClick={showRestockModal} className="px-1 scale-100 active:scale-110 whitespace-nowrap rounded-sm m-auto text-light border border-gray-300 cursor-pointer hover:bg-lightgreen hover:text-secondary hover:border-secondary">
+                      <button onClick={() => showRestockModal(items.ingredients)} className="px-1 scale-100 active:scale-110 whitespace-nowrap rounded-sm m-auto text-light border border-gray-300 cursor-pointer hover:bg-lightgreen hover:text-secondary hover:border-secondary">
                         + Restock
                       </button>
                     </div>
