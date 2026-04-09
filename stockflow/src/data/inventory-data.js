@@ -11,7 +11,6 @@ export const inventory = [{
   background: '#baffd4',
   color: '#16a34a',
   progressLoader: '#16a34a',
-  containerBackground: '#e0ffec',
 }, 
 {
   itemId: crypto.randomUUID(),
@@ -24,7 +23,6 @@ export const inventory = [{
   background: '#ffdcdc',
   color: '#a31616',
   progressLoader: '#a31616',
-  containerBackground: '#ffe7e7',
 }, 
 {
   itemId: crypto.randomUUID(),
@@ -37,7 +35,6 @@ export const inventory = [{
   background: '#ffdcdc',
   color: '#a31616',
   progressLoader: '#a31616',
-  containerBackground: '#ffe7e7',
 }, 
 {
   itemId: crypto.randomUUID(),
@@ -50,7 +47,6 @@ export const inventory = [{
   background: '#fff0df',
   color: '#D97706',
   progressLoader: '#D97706',
-  containerBackground: '#fff3e7',
 }, 
 {
   itemId: crypto.randomUUID(),
@@ -63,7 +59,6 @@ export const inventory = [{
   background: '#baffd4',
   color: '#16a34a',
   progressLoader: '#16a34a',
-  containerBackground: '#e0ffec',
 }, 
 {
   itemId: crypto.randomUUID(),
@@ -76,7 +71,6 @@ export const inventory = [{
   background: '#baffd4',
   color: '#16a34a',
   progressLoader: '#16a34a',
-  containerBackground: '#e0ffec',
 }, 
 {
   itemId: crypto.randomUUID(),
@@ -89,7 +83,6 @@ export const inventory = [{
   background: '#fff0df',
   color: '#D97706',
   progressLoader: '#D97706',
-  containerBackground: '#fff3e7',
 }, 
 {
   itemId: crypto.randomUUID(),
@@ -102,7 +95,6 @@ export const inventory = [{
   background: '#ffdcdc',
   color: '#a31616',
   progressLoader: '#a31616',
-  containerBackground: '#ffe7e7',
 }, 
 {
   itemId: crypto.randomUUID(),
@@ -115,7 +107,6 @@ export const inventory = [{
   background: '#baffd4',
   color: '#16a34a',
   progressLoader: '#16a34a',
-  containerBackground: '#e0ffec',
 }, 
 {
   itemId: crypto.randomUUID(),
@@ -128,7 +119,6 @@ export const inventory = [{
   background: '#baffd4',
   color: '#16a34a',
   progressLoader: '#16a34a',
-  containerBackground: '#e0ffec',
 }, 
 {
   itemId: crypto.randomUUID(),
@@ -141,7 +131,6 @@ export const inventory = [{
   background: '#fff0df',
   color: '#D97706',
   progressLoader: '#D97706',
-  containerBackground: '#fff3e7',
 }, 
 {
   itemId: crypto.randomUUID(),
@@ -154,6 +143,5 @@ export const inventory = [{
   background: '#baffd4',
   color: '#16a34a',
   progressLoader: '#16a34a',
-  containerBackground: '#e0ffec',
 }, 
 ]

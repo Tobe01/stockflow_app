@@ -4,13 +4,21 @@ import { InventoryNav } from "../components/layout/inventory-nav";
 import { inventory } from "../data/inventory-data";
 import { stockMetrix } from "../data/stockmetrix";
 import { AddInventory } from '../components/modals/add-inventory';
+import { Restock } from '../components/modals/restock-inventory';
 
 export function InventoryPage() {
 
   const [ addItems, setAddItems ] = useState(false);
+  const [ restock, setRestock ] = useState(false);
+
+  const ingredient = inventory.ingredients;
 
   function showAddItemsModal(){
       setAddItems(true);
+  }
+
+  function showRestockModal(){
+    setRestock(true);
   }
 
   return (
@@ -20,6 +28,10 @@ export function InventoryPage() {
 
       { addItems && (
         <AddInventory setAddItems={setAddItems} />
+      )}
+
+      { restock && (
+        <Restock setRestock={setRestock} ingredient={ingredient} />
       )}
 
       <div className="font-body text-[14px] gap-5 h- flex flex-col pl-25 pr-5 py-6">
@@ -52,13 +64,11 @@ export function InventoryPage() {
               const buttonColor = items.color;
               const buttonBackground = items.background;
               const progressBackground = items.progressLoader;
-              const containerBakcground = items.containerBackground;
 
               return (
                 <div
                   id={items.itemId}
                   className="flex border-b rounded-bl-lg rounded-br-lg border-border align-middle py-3 justify-items-start gap-2"
-                  style={{backgroundColor: `${containerBakcground}`}}
                 >
                   <div className="flex w-[351.5px] pl-3.5 align-middle gap-2">
                     <div className="my-auto flex gap-2">
@@ -107,7 +117,7 @@ export function InventoryPage() {
                       </div>
                     </div>
                     <div className="m-auto">
-                      <button className="px-1 scale-100 active:scale-110 whitespace-nowrap rounded-sm m-auto text-light border border-gray-300 cursor-pointer hover:bg-lightgreen hover:text-secondary hover:border-secondary">
+                      <button onClick={showRestockModal} className="px-1 scale-100 active:scale-110 whitespace-nowrap rounded-sm m-auto text-light border border-gray-300 cursor-pointer hover:bg-lightgreen hover:text-secondary hover:border-secondary">
                         + Restock
                       </button>
                     </div>
