@@ -20,18 +20,23 @@ export function AddInventory({setAddItems}) {
           <div className="flex gap-3">
             <div className="w-[50%]">
               <p className="font-bold mb-1 text-light">Ingredient</p>
-              <input placeholder="add ingredient" className="focus:outline-secondary focus:outline-1 py-1 px-2 border border-border placeholder:text-sm w-full" />
+              <input placeholder="Add ingredient" className="focus:outline-secondary focus:outline-1 py-1 px-2 border border-border placeholder:text-sm w-full" />
             </div>
             <div className="w-[50%]">
               <p className="font-bold mb-1 text-light">In-stock</p>
-              <input placeholder="stock (kg)" className="focus:outline-secondary focus:outline-1 py-1 px-2 border border-border placeholder:text-sm w-full" />
+              <input placeholder="Stock (kg)" className="focus:outline-secondary focus:outline-1 py-1 px-2 border border-border placeholder:text-sm w-full" />
             </div>
           </div>
 
-          <div className="flex gap-4 w-[49%]">
-            <div className="bg-gray-200 py-0.5 -mb-0.5 rounded-sm gap-2 flex w-full">
+          <div className="flex gap-4">
+            <div className="w-[50%]">
+              <p className="font-bold mb-1 text-light">Min-Level</p>
+              <input placeholder="Min-Level (kg)" className="focus:outline-secondary focus:outline-1 py-1 px-2 border border-border placeholder:text-sm w-full" />
+            </div>
+
+            <div className="bg-gray-200 w-[50%] h-9 px-2 py-2 mt-auto rounded-sm gap-2 flex">
               <img className="w-8" src={imageIcon} alt="imageIcon" loading="lazy" />
-              <input className="cursor-pointer m-auto w-full" type="file" accept="image/*" />
+              <input className="cursor-pointer" type="file" accept="image/*" />
             </div>
           </div>
         </div>
