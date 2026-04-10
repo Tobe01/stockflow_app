@@ -3,11 +3,15 @@ import dayjs from "dayjs";
 import LocalizedFormat from "dayjs/plugin/localizedFormat";
 import AdvancedFormat from "dayjs/plugin/advancedFormat";
 import search from "../../assets/icons/proicons--search.svg";
-import addIcon from '../../assets/icons/add_24dp_999999_FILL0_wght400_GRAD0_opsz24.svg';
+import addIcon from "../../assets/icons/add_24dp_999999_FILL0_wght400_GRAD0_opsz24.svg";
 
-export function PosNav() {
+export function PosNav({setAddNewItems}) {
   const [offlineMode, setOfflineMode] = useState(false);
   const [buttonSwitch, setButtonSwitch] = useState("Online");
+
+  function displayAddItemModal(){
+    setAddNewItems(true);
+  }
 
   dayjs.extend(LocalizedFormat);
   dayjs.extend(AdvancedFormat);
@@ -64,7 +68,7 @@ export function PosNav() {
               placeholder="Search menu..."
             />
           </div>
-          
+
           <div className="flex align-middle justify-center m-auto gap-2">
             <div className="bg-input text-light border flex m-auto align-middle justify-center p-0.5 px-2.5 border-border rounded-md font-money">
               {currentday}
@@ -74,7 +78,9 @@ export function PosNav() {
             </div>
           </div>
 
-          <button className="bg-input scale-100 active:scale-110 flex m-auto px-1 p-0.5 rounded-sm border border-border cursor-pointer"><img src={addIcon} alt="addIcon" loading="lazy" /></button>
+          <button onClick={displayAddItemModal} className="bg-input scale-100 active:scale-110 flex m-auto px-1 p-0.5 rounded-sm border border-border cursor-pointer">
+            <img src={addIcon} alt="addIcon" loading="lazy" />
+          </button>
 
           {buttonSwitch === "Online" && (
             <button

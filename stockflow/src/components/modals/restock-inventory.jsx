@@ -20,8 +20,8 @@ export function Restock({setRestock, ingredient}){
               <div className="flex flex-col gap-4 py-2 w-120">
                 <div className="flex gap-3">
                   <div className="w-[50%]">
-                    <p className="font-bold mb-1 text-light">Stock Value (kg)</p>
-                    <input placeholder="Update stock (kg)" className="focus:outline-secondary rounded-sm focus:outline-1 py-1 px-2 border border-border placeholder:text-sm w-full" />
+                    <p className="font-bold mb-1 text-light">Stock Value</p>
+                    <input placeholder="Update stock" className="focus:outline-secondary rounded-sm focus:outline-1 py-1 px-2 border border-border placeholder:text-sm w-full" />
                   </div>
                   <button className="w-[50%] py-0.5 mt-auto bg-secondary hover:bg-darkgreen scale-100 hover:scale-102 transition-transform duration-100 active:scale-95 cursor-pointer text-[20px] text-white rounded-sm font-bold">Restock</button>
                 </div>

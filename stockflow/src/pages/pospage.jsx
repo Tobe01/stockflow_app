@@ -1,19 +1,26 @@
+import { useState } from 'react';
 import { MainNav } from '../components/layout/main-nav';
 import { PosNav } from '../components/layout/pos-nav';
 import { PosSection } from '../components/sections/pos-section';
 import { MenuOptions } from '../components/layout/menu-options';
 import { menu } from '../data/pos-data';
+import { NewItem } from '../components/modals/addItems';
 
 export function PosPage(){
-
+  const [ addNewItems, setAddNewItems ] = useState(false);
   const menuItems = menu;
  
   return(
     <div>
       <MainNav/>
-      <PosNav/>
+      <PosNav setAddNewItems={setAddNewItems} />
       <PosSection/>
       <MenuOptions/>
+
+      { addNewItems && (
+        <NewItem setAddNewItems={setAddNewItems} />
+      )}
+      
       <div className='font-body ml-18 pl-5 pt-36 overflow-hidden pr-10 py-1.75 w-[66.6%] h-fit'>
         <div className='w-full grid w-purple-400 grid-cols-4 align-middle justify-between gap-x-7 gap-y-2'>
 
