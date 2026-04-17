@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import AuthLayout from "./components/AuthLayout";
 import InputField from "./components/InputField";
 
@@ -202,13 +201,12 @@ export function ResetPassword() {
 
       <div className="mt-6 text-center text-sm text-slate-600">
         <p className="mb-2">Remembered your password?</p>
-        <Link to="/Login" className="font-semibold text-secondary hover:text-darkgreen focus:outline-none">
           <button
             type="button"
+            className="font-semibold text-secondary hover:text-darkgreen focus:outline-none"
           >
             Sign in instead
           </button>
-        </Link>
       </div>
     </AuthLayout>
   );

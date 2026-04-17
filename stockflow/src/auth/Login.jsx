@@ -1,11 +1,10 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import AuthLayout from "./components/AuthLayout";
 import InputField from "./components/InputField";
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-export function Login({setLogin, login}) {
+export function Login({ setLogin, login }) {
   const [form, setForm] = useState({ email: "", password: "" });
   const [showPassword, setShowPassword] = useState(false);
   const [touched, setTouched] = useState({});
@@ -32,7 +31,7 @@ export function Login({setLogin, login}) {
   const handleSubmit = (event) => {
     event.preventDefault();
     setTouched({ email: true, password: true });
-  }; 
+  };
 
   return (
     <AuthLayout
@@ -149,22 +148,19 @@ export function Login({setLogin, login}) {
       <div className="mt-6 space-y-4 text-center text-sm text-white">
         <p>
           New to Inventra?{" "}
-          <Link
-            to="/Signup"
+          <button
             className="cursor-pointer font-semibold text-secondary hover:text-darkgreen focus:outline-none"
-          >
-            <button className="cursor-pointer" type="button">
-              Create an account
-            </button>
-          </Link>
-        </p>
-        <Link to="/ForgotPassword" className="font-semibold text-white hover:text-slate-900 focus:outline-none">
-          <button 
             type="button"
           >
-            Forgot password?
+            Create an account
           </button>
-        </Link>
+        </p>
+        <button
+          className="font-semibold text-white hover:text-slate-900 focus:outline-none"
+          type="button"
+        >
+          Forgot password?
+        </button>
       </div>
     </AuthLayout>
   );

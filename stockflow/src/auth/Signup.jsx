@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import AuthLayout from "./components/AuthLayout";
 import InputField from "./components/InputField";
 
@@ -251,12 +250,7 @@ export function Signup({setSignup, signup}) {
       <div className="mt-3 text-center text-sm text-slate-600">
         <p>
           Already have an account?{" "}
-          <Link
-            to="/Login"
-            className="font-semibold cursor-pointer text-secondary hover:text-darkgreen focus:outline-none"
-          >
-            <button className="cursor-pointer" type="button">Sign in</button>
-          </Link>
+            <button className="font-semibold cursor-pointer text-secondary hover:text-darkgreen focus:outline-none" type="button">Sign in</button>
         </p>
       </div>
     </AuthLayout>
