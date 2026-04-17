@@ -27,7 +27,6 @@ export function Home() {
       { login && <Login setSignup={setSignup} setForgotpassword={setForgotpassword} login={login} setLogin={setLogin} />}
       { signup && <Signup setLogin={setLogin} signup={signup} setSignup={setSignup} /> }
       { forgotPassword && <ForgotPassword forgotPassword={forgotPassword} setForgotpassword={setForgotpassword} setLogin={setLogin} /> }
-      
       { resetPassword && <ResetPassword resetPassword={resetPassword} setResetpassword={setResetpassword} login={login} setLogin={setLogin} /> }
 
       <div className="flex font-body w-full h-206.28 pt-10 bg-[radial-gradient(#8C8C8C_1px,#e0ffec_1px)] bg-size-[30px_30px]">

@@ -2,7 +2,7 @@ import { useState } from "react";
 import AuthLayout from "./components/AuthLayout";
 import InputField from "./components/InputField";
 
-export function ResetPassword({resetPassword, setResetpassword, login, setLogin}) {
+export function ResetPassword() {
   const [form, setForm] = useState({ password: "", confirmPassword: "" });
   const [showPassword, setShowPassword] = useState({
     password: false,
@@ -39,13 +39,9 @@ export function ResetPassword({resetPassword, setResetpassword, login, setLogin}
   };
 
   // display login modal
-  function renderLogin(){
-    
-  }
 
   return (
     <AuthLayout
-      setResetpassword={setResetpassword}
       title="Reset your password"
       subtitle="Choose a new password to keep your account secure."
     >
