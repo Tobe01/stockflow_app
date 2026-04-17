@@ -1,14 +1,30 @@
 import React from 'react';
+import close from "../../assets/icons/close_white.svg";
 
-export function AuthLayout({ title, subtitle, children, footer }) {
+export function AuthLayout({ title, subtitle, children, footer, setLogin, login, signup, setSignup }) {
+  
+  function closeLogin(){
+    if(login === true){
+      setLogin(false);
+      setSignup(false);
+    } else if(signup === true){
+      setSignup(false);
+      setLogin(false);
+    } 
+  }
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-50 px-4 py-10">
+    <div className="min-h-screen flex items-center justify-center modal-backdrop">
       <div className="w-full max-w-md">
-        <div className="bg-white border border-border rounded-4xl shadow-sm p-8 sm:p-10">
-          <div className="mb-8 text-center">
-            <p className="text-3xl font-bold text-secondary">{title}</p>
+        <div className="border border-border rounded-4xl shadow-sm px-10 py-5">
+
+          <span onClick={closeLogin} className='flex w-fit ml-auto cursor-pointer'>
+            <img src={close} alt='closeIcon' loading='lazy' />
+          </span>
+          <div className="text-center">
+            <p className="text-[26px] font-bold text-secondary">{title}</p>
             {subtitle && (
-              <p className="mt-3 text-sm leading-relaxed text-slate-500">
+              <p className="text-sm mb-2.5 leading-relaxed text-white">
                 {subtitle}
               </p>
             )}
@@ -16,7 +32,7 @@ export function AuthLayout({ title, subtitle, children, footer }) {
 
           {children}
 
-          {footer && <div className="mt-8 text-sm text-slate-500">{footer}</div>}
+          {footer && <div className="text-sm text-white">{footer}</div>}
         </div>
       </div>
     </div>

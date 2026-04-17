@@ -5,7 +5,7 @@ import InputField from "./components/InputField";
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-export function Signup() {
+export function Signup({setSignup, signup}) {
   const [form, setForm] = useState({
     fullName: "",
     email: "",
@@ -59,10 +59,12 @@ export function Signup() {
 
   return (
     <AuthLayout
+      setSignup={setSignup}
+      signup={signup}
       title="Create your Inventra account"
-      subtitle="Start managing inventory with a fast and friendly onboarding form."
+      subtitle="Take control of your inventory, starting today."
     >
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form onSubmit={handleSubmit} className="space-y-2.5">
         <InputField
           id="fullName"
           name="fullName"
@@ -240,13 +242,13 @@ export function Signup() {
 
         <button
           type="submit"
-          className="w-full rounded-3xl bg-secondary py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-darkgreen active:scale-95"
+          className="w-full mt-2 rounded-3xl bg-secondary py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-darkgreen active:scale-95"
         >
           Create account
         </button>
       </form>
 
-      <div className="mt-6 text-center text-sm text-slate-600">
+      <div className="mt-3 text-center text-sm text-slate-600">
         <p>
           Already have an account?{" "}
           <Link

@@ -5,7 +5,7 @@ import InputField from "./components/InputField";
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-export function Login() {
+export function Login({setLogin, login}) {
   const [form, setForm] = useState({ email: "", password: "" });
   const [showPassword, setShowPassword] = useState(false);
   const [touched, setTouched] = useState({});
@@ -32,10 +32,12 @@ export function Login() {
   const handleSubmit = (event) => {
     event.preventDefault();
     setTouched({ email: true, password: true });
-  };
+  }; 
 
   return (
     <AuthLayout
+      setLogin={setLogin}
+      login={login}
       title="Sign in to Inventra"
       subtitle="Access your inventory workspace with a secure login experience."
     >
@@ -144,7 +146,7 @@ export function Login() {
         </button>
       </form>
 
-      <div className="mt-6 space-y-4 text-center text-sm text-slate-600">
+      <div className="mt-6 space-y-4 text-center text-sm text-white">
         <p>
           New to Inventra?{" "}
           <Link
@@ -156,7 +158,7 @@ export function Login() {
             </button>
           </Link>
         </p>
-        <Link to="/ForgotPassword" className="font-semibold text-slate-600 hover:text-slate-900 focus:outline-none">
+        <Link to="/ForgotPassword" className="font-semibold text-white hover:text-slate-900 focus:outline-none">
           <button 
             type="button"
           >

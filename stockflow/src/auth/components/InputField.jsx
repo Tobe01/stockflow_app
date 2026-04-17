@@ -15,7 +15,7 @@ export function InputField({
   children,
 }) {
   return (
-    <div className="space-y-2">
+    <div className="space-y-0.5">
       <label htmlFor={id} className="block text-sm font-medium text-slate-700">
         {label}
       </label>
@@ -29,7 +29,7 @@ export function InputField({
           onBlur={onBlur}
           placeholder={placeholder}
           autoComplete={autoComplete}
-          className={`w-full rounded-3xl border px-4 py-3 text-sm text-slate-900 bg-white shadow-sm transition focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary ${
+          className={`w-full rounded-3xl border px-4 py-2 text-sm text-slate-900 bg-white shadow-sm transition focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary ${
             error ? 'border-secondary' : 'border-border'
           }`}
         />
