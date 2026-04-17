@@ -204,7 +204,6 @@ export function ResetPassword() {
       <div className="mt-6 text-center text-sm text-slate-600">
         <p className="mb-2">Remembered your password?</p>
           <button
-            onClick={renderLogin}
             type="button"
             className="font-semibold  text-gray-200 hover:text-slate-900 focus:outline-none"
           >
